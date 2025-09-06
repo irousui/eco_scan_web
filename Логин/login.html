@@ -19,22 +19,50 @@
                     <img src="./images/Group 1.png" alt="">Eco Scan 
                 </h1>
                 <nav>
-                    <a href="main">Главная</a>
+                    <a href="../Главная/main.html">Главная</a>
                     <a href="#about">О нас</a>
                     <a class="nav-item contact" id="contactBtn">Связь с нами</a>
-                    <a href="../Профиль/profile.html"><button class="welcome-btn1 primary">Личный кабинет</button></a>
+                    <a href="../Профиль/profile.html" id="profileLink"><button class="welcome-btn1 primary">Личный кабинет</button></a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section>
-        <div class="map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd3f6ab03fc025484a4010a0d0623e938203a13b8a25040bc167e7edabe4e08d&amp;source=constructor" width="500" height="400" frameborder="0">
+<section class="registration-section" id="welcome">
+<div class="registration-wrapper">
+    <div class="registration-txt">
+        <h2>
+            Потребляй Сканируй Сортируй
+        </h2>
+    </div>
 
-            </iframe>
+
+    <div class="registration-container">
+        <div class="registration-header">
+            <h2>Войти</h2>
         </div>
-    </section>
+        
+        <form action="login_main.php" method="post">
+            <div class="form-group">
+                <label for="email">Логин</label>
+                <input type="text" placeholder="login" id="login" name="login" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" placeholder="password" id="password" name="password" required>
+            </div>
+            
+            <!-- <div class="form-group">
+                <label for="confirm-password">Подтвердите пароль</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div> -->
+            
+            <button type="submit" class="welcome-btn2 primary"><a href="../Профиль/profile.html">Войти</button></a>
+        </form>
+    </div>
+</div>
+</section>
 
     <!-- Модальное окно -->
     <div class="modal-overlay" id="modalOverlay">
@@ -140,8 +168,9 @@
             });
         }
     </script>
-    
-    <footer>
+
+
+<footer>
     <div class="foot-nav">
         <nav>
             <a href="#welcome">Главная</a>
@@ -153,8 +182,10 @@
     <div>
         <h3 class="logo">Copyright @ All right reserved</h3>
     </div>
-    </footer>
+</footer>
 </body>
+
+
 
 
 </html>
